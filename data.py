@@ -30,7 +30,24 @@
 # print(y)
 # print(z)
 
-input ("Setence here")
-x=input()
-y= x.split({" "})
-print(len(x))
+# x = input("Type Sentence here")
+# print(len(x.split(" ")))
+
+# day_of_week = input("what day is it? ")
+# if day_of_week == "Friday":
+#     print("correct")
+# else:
+#     print("incorrect")
+
+# x = "test"
+# print(f"hello {x}")
+
+# temp = 75
+# if temp > 68:
+#     print('warm')
+# elif temp == 68:
+#     print('perfect')
+# else:
+#     print('cold')
+
+even_or_odd = input("Number here")
