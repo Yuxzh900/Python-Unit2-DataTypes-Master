@@ -11,12 +11,19 @@
 # Calculate the total that needs to be paid
 # Print the f string after the user has input data
 
-# def bill_calculator():
-#     print("How much was the bill?")
-#     input 
-    
-#     print(input * 14)
-# bill_calculator()
+def bill_calculator():
+    x = int(input("How much was the bill?"))
+    y = input("How was the service?")
+    y.lower() == y.upper()
+    if y == "great":
+        print(x * 1.25)
+    elif y == "good":
+        print(x * 1.2)
+    elif y == "okay": 
+        print(x * 1.15)
+    elif y == "bad":
+        print(x)
+bill_calculator()
 
 # values = [1,2.23,5,7,2,30,15]
 # print(values)
@@ -49,5 +56,3 @@
 #     print('perfect')
 # else:
 #     print('cold')
-
-even_or_odd = input("Number here")
