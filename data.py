@@ -13,8 +13,7 @@
 
 def bill_calculator():
     x = int(input("How much was the bill?"))
-    y = input("How was the service?")
-    y.lower() == y.upper()
+    y = input("How was the service?").strip().lower()
     if y == "great":
         print(x * 1.25)
     elif y == "good":
@@ -23,6 +22,7 @@ def bill_calculator():
         print(x * 1.15)
     elif y == "bad":
         print(x)
+    else: print("ERROR")
 bill_calculator()
 
 # values = [1,2.23,5,7,2,30,15]
