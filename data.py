@@ -2,28 +2,19 @@
 # y = float(3)
 # print(x,y)
 
-# You will be creating a tip calculator that must accomplish all of the following
-
-# Create variables representing at the bill, tip and total amount paid
-# Receive user input and assign that user input to the variables in step 1 (excluding total)
-# Change the data type of bill from String to Float
-# Change the data type of tip to Integer (int)
-# Calculate the total that needs to be paid
-# Print the f string after the user has input data
-
-def bill_calculator():
-    x = int(input("How much was the bill?"))
-    y = input("How was the service?").strip().lower()
-    if y == "great":
-        print(x * 1.25)
-    elif y == "good":
-        print(x * 1.2)
-    elif y == "okay": 
-        print(x * 1.15)
-    elif y == "bad":
-        print(x)
-    else: print("ERROR")
-bill_calculator()
+# def bill_calculator():
+#     x = int(input("How much was the bill?"))
+#     y = input("How was the service?").strip().lower()
+#     if y == "great":
+#         print(x * 1.25)
+#     elif y == "good":
+#         print(x * 1.2)
+#     elif y == "okay": 
+#         print(x * 1.15)
+#     elif y == "bad":
+#         print(x)
+#     else: print("ERROR")
+# bill_calculator()
 
 # values = [1,2.23,5,7,2,30,15]
 # print(values)
@@ -56,3 +47,11 @@ bill_calculator()
 #     print('perfect')
 # else:
 #     print('cold')
+
+def even_or_odd():
+    N = int(input("Type number here!"))
+    if N % 2 == 1:
+        print("ODD")
+    else:
+        print("EVEN")
+even_or_odd()
