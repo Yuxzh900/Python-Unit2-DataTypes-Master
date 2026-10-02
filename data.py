@@ -48,10 +48,16 @@
 # else:
 #     print('cold')
 
-def even_or_odd():
-    N = int(input("Type number here!"))
-    if N % 2 == 1:
-        print("ODD")
-    else:
-        print("EVEN")
-even_or_odd()
+# def even_or_odd():
+#     N = int(input("Type number here!"))
+#     if N % 2 == 1:
+#         print("ODD")
+#     else:
+#         print("EVEN")
+# even_or_odd()
+
+def factor():
+    n = int(input("What number do you want to factor?"))
+    for i in range(1,n+1):
+        print(n/i)
+factor()
