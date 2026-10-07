@@ -38,6 +38,10 @@ def en_or_fr(text):
     text = text.lower()
     for i in range(len(text)):
         if text[i] == "s":
-        s += 1
-    print(s)
-en_or_fr("Hello My name is what is your name?")
+            s += 1
+        elif text[i] == "t":
+            t += 1
+    if s > t or t == s:
+        print("French")
+    else: print("English")
+en_or_fr("sentence")
