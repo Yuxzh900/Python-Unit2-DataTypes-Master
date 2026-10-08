@@ -56,23 +56,23 @@
 #         print("EVEN")
 # even_or_odd()
 
-def factor():
-    n = int(input("What number do you want to factor?"))
-    for i in range(1,n+1):
-        if n % i == 0:
-            print(i)
-factor()
+# def factor():
+#     n = int(input("What number do you want to factor?"))
+#     for i in range(1,n+1):
+#         if n % i == 0:
+#             print(i)
+# factor()
 
-# def gcf():
-#     n1 = int(input("What is the first number do you want to find the GCF of?"))
-#     n2 = int(input("What is the second number do you want to find the GCF of?"))
-#     if n1 > n2:
-#         t = n2
-#     else: t = n1
-#     for i in range(1,t+1):
-#         if n1 % i == 0 and n2 % i == 0:
-#             gcd = i
-#     print(gcd)
-# gcf()
+def gcf():
+    n1 = int(input("What is the first number do you want to find the GCF of?"))
+    n2 = int(input("What is the second number do you want to find the GCF of?"))
+    if n1 > n2:
+        t = n2
+    else: t = n1
+    for i in range(1,t+1):
+        if n1 % i == 0 and n2 % i == 0:
+            gcd = i
+    print(gcd)
+gcf()
 
 # only sample function , loop, and how to access something in a list

@@ -32,16 +32,24 @@
 # wiz(3, "A", ["BA", "CB", "DA" ])
 
 
-def en_or_fr(text):
-    s = 0
-    t = 0
-    text = text.lower()
-    for i in range(len(text)):
-        if text[i] == "s":
-            s += 1
-        elif text[i] == "t":
-            t += 1
-    if s > t or t == s:
-        print("French")
-    else: print("English")
-en_or_fr("sentence")
+# def en_or_fr(text):
+#     s = 0
+#     t = 0
+#     text = text.lower()
+#     for i in range(len(text)):
+#         if text[i] == "s":
+#             s += 1
+#         elif text[i] == "t":
+#             t += 1
+#     if s > t or t == s:
+#         print("French")
+#     else: print("English")
+# en_or_fr("the mat was ten thousand dollars off")
+
+def data(megabyte, months, usepermonth):
+    finalmt = megabyte
+    for i in range(months):
+        finalmt -= usepermonth[i] 
+        finalmt += megabyte
+    print(finalmt) 
+data(10, 3, [10, 2, 12])
